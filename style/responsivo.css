@@ -21,6 +21,10 @@
         height: auto;
     }
 
+    #s1 h1 {
+        margin-top: 1.5rem;
+    }
+
     #s1 img {
         margin: 0;
     }
@@ -77,6 +81,24 @@
 }
 
 @media (max-width: 600px) {
+    #title {
+        animation: animTitulo2 10s;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        right: 0;
+        color: #fff;
+        text-align: center;
+        font-family: Lato;
+        letter-spacing: 10px;
+        padding-left: 10px;
+        top: 0;
+        font-weight: 300;
+        font-size: 40px;
+        margin-top: 0px;
+        z-index: 100;
+    }
+
     body {
         font-size: 16px;
     }
@@ -116,6 +138,55 @@
     .skills-items {
         width: 90%;
         max-width: 350px;
+    }
+}
+
+@keyframes animTitulo2 {
+    0% {
+        opacity: 0;
+        top: 60%;
+        font-weight: 300;
+        font-size: 40px;
+        margin-top: -40px;
+    }
+
+    10% {
+        opacity: 25%;
+        top: 60%;
+        font-weight: 300;
+        font-size: 40px;
+        margin-top: -40px;
+    }
+
+    20% {
+        opacity: 50%;
+        top: 60%;
+        font-weight: 300;
+        font-size: 40px;
+        margin-top: -40px;
+    }
+
+    30% {
+        opacity: 75%;
+        top: 60%;
+        font-weight: 300;
+        font-size: 40px;
+        margin-top: -40px;
+    }
+
+    40% {
+        opacity: 100%;
+        top: 60%;
+        font-weight: 300;
+        font-size: 40px;
+        margin-top: -40px;
+    }
+
+    100% {
+        top: 0;
+        font-weight: 300;
+        font-size: 30px;
+        margin-top: 0px;
     }
 }
 
