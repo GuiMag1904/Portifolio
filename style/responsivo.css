@@ -42,10 +42,22 @@
 
     #projeto1 .image {
         margin: 2rem 0;
+        transform: none;
+    }
+
+    #projeto1 .image:hover {
+        transform: none;
+        box-shadow: -20px 20px 20px #000;
     }
 
     #projeto2 .image {
         margin: 2rem 0;
+        transform: none;
+    }
+
+    #projeto2 .image:hover {
+        transform: none;
+        box-shadow: -20px 20px 20px #000;
     }
 
     #skills {
@@ -100,6 +112,7 @@
         gap: 20px;
         align-items: center;
     }
+
     .skills-items {
         width: 90%;
         max-width: 350px;
