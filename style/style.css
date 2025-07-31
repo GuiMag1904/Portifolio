@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    overflow: hidden;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    font-family: Lato;
+}
+
+#mainSection {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    font-size: 1.5rem;
+    overflow: hidden;
+    align-items: center;
+}
+
+#mainSection section {
+    width: 75%;
+}
+
+h1 {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 30px;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+}
+
+#s1 {
+    display: flex;
+    margin-top: 10%;
+}
+
+#s1 img {
+    width: 15rem;
+    margin-left: 200px;
+    animation: animMoveAstro 3.5s linear infinite;
+}
+
+#s2 {
+    margin-top: 5%;
+}
+
+#s2 h1 {
+    text-align: center;
+}
+
+#s2 p {
+    text-align: justify;
+}
+
+#s2,
+#s4 {
+    display: none;
+}
+
+.texto a {
+    text-decoration: none;
+}
+
+.fa-github,
+.fa-file-lines,
+.fa-linkedin {
+    font-size: 2.5rem;
+    margin: 10px 20px;
+    background: linear-gradient(45deg, #d4b96f, #b8974e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.fa-github:hover,
+.fa-file-lines:hover,
+.fa-linkedin:hover {
+    color: #fff;
+    text-shadow: 0 0 10px #d4b96f,
+        0 0 20px #d4b96f,
+        0 0 40px #d4b96f,
+        0 0 80px #b8974e,
+        0 0 120px #b8974e,
+        0 0 160px #b8974e;
+}
+
+#s4 {
+    text-align: center;
+}
+
+#skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+    gap: 50px;
+    margin: 6% 0;
+}
+
+.skills-items {
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 0 10px #fff;
+    font-size: 2rem;
+    background: rgba(57, 84, 90, .2);
+}
+
+.skills-items:hover {
+    scale: 1.1;
+}
+
+.skills-items .fa-brands {
+    font-size: 5rem;
+    background: linear-gradient(45deg, #d4b96f, #b8974e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+@keyframes animAparece {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes animMoveAstro {
+    0% {
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+
+}

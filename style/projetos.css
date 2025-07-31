@@ -1,0 +1,51 @@
+#s3 {
+    display: none;
+    margin: 10rem 0;
+}
+
+#s3 h1 {
+    text-align: center;
+}
+
+.descricao {
+    display: flex;
+    margin: 10px 10px 50px 10px;
+}
+
+.projetos {
+    text-align: justify;
+    border: 1px solid #395439;
+    padding: 30px;
+    border-radius: 30px;
+    background: radial-gradient(#d4b96f, #b8974e, #000, #000);
+    box-shadow: 0 0 10px #d4b96f,
+                0 0 20px #d4b96f,
+                0 0 40px #b8974e,
+                0 0 80px #b8974e;
+}
+
+#projeto1 {
+    margin-bottom: 5rem;
+}
+
+.image {
+    width: 40%;
+    height: 40%;
+    transform: perspective(1000px) rotateY(50deg) rotateX(50deg);
+    transition-duration: 2s;
+    box-shadow: -20px 20px 20px #000;
+}
+
+.image:hover {
+    transform: scale(1.1);
+    box-shadow: none;
+}
+
+#projeto1 .image {   
+    margin-right: 5rem;
+}
+
+#projeto2 .image {   
+    margin-left: 5rem;
+}
+
